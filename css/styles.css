@@ -1,0 +1,256 @@
+/*Imports*/ 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/* Variables*/ 
+
+:root {
+    --principal: #0b0c0d; 
+    --secondary: #fff;
+    --font-primary: "Rubik", sans-serif;
+    --font-secondary: "Bowly One SC" 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globals */
+
+html {
+    font-size: 62.5%; /* este valor es para que el tamaño de la fuente en el descktop sea de 10px pero que sea dinámico segun la pantalla que se este utilizando- es 62.5% de 16px que es el tamaño de fuente por defecto que tiene el ordenador */ 
+    font-family: var(--font-primary);
+    color: var(--principal);
+}
+body {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+    display: inline-block;
+}
+
+p {
+    font-size: 1.6em;
+    color: var(--principal);    
+}
+
+h1 {
+    font-size: 2.4em;
+}
+ 
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+
+
+/*Helpers*/ 
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+/*Header*/ 
+header {
+    background-color: var(--principal);
+}
+
+header .navbar {
+  
+    min-height: 7vh;
+    max-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logotipo {
+    height: 40px;
+    width: 120px;
+}
+
+header .menu {
+    flex-basis: 40%;
+    justify-content: space-around;
+}
+
+.menu .menu__item .menu__link { 
+    font-size: 1.8em;
+    position: relative;
+    border: 1px var(--secondary) solid;
+    color: var(--secondary);
+}
+ /*FIN HEADER*/ 
+
+ /*Main*/ 
+ main {
+    margin: 5px 0;
+    padding: 0;
+    justify-content: space-between;
+ }
+
+ /* Home */
+ .container-home{
+    display: flex;
+    height: 100vh;
+    background-image: url('../assets/img/Rock-climbing.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    padding: 30px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+ .isologotipo {
+     max-width: 400px;
+       
+}
+
+
+
+ /*Products*/
+ 
+ .picture-product {
+     height: 200px;
+     width: 200px;
+
+ }
+
+ .grid-container {
+     display: grid;
+     gap: 20px;
+     grid-template-areas:
+     "article1 article2"
+     "article3 article4";
+     }
+
+
+ /*Products*/
+
+.grid-article {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 2px;
+}
+
+h2 .name {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+h2 .description {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.img-shoe {
+    grid-row: 2/8;
+    grid-column: 1/2;
+}
+
+.cost {
+    grid-row: 8/9;
+    grid-column: 1/2;
+}
+
+.discount {
+    grid-row: 9/10;
+    grid-column: 1/2;
+}
+
+#discount {
+    color: red;
+}
+
+p .description-item {
+    grid-row: 2/6;
+    grid-column: 2/3;
+}
+
+.caracter {
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
+
+.caracter__item {
+    grid-row: 7/10;
+    grid-column: 2/3;
+
+    font-size: 1.4em;
+    list-style-type: circle;
+}
+
+
+/*Footer*/ 
+
+.footer {
+    background-color: var(--principal);
+    min-height: 7vh;
+    max-width: auto;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.legal__item {
+    font-size: 1.1em;
+    color: var(--secondary);
+   
+} 
+
+.container-img {
+    align-items: center;
+}
+
+.footer-logotipo {
+    height: 40px;
+    width: 120px;
+    align-items: center;
+   
+}
+
+.menu-footer {
+    color: var(--secondary);
+    font-size: .9em;
+    justify-content: space-around;
+}
+
+footer .submenu__item {
+        font-size: .9 em;
+
+}
+
+.sumbenu__item .submenu__link {
+    
+    font-size: .7em;
+}
