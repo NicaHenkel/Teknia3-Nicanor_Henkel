@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>teknia3</title>
     <link rel="stylesheet" href="../css/styles.css">
+    
 </head>
 
 
@@ -20,11 +21,11 @@
                 <li class="menu__item">
                     <a class="menu__link" href="../index.html">Nosotros</a>
                 </li>
-                <li class="menu__item">
+                <li class="menu__item" id="product">
                     <a class="menu__link" href="../Teknia 3/assets/product.html">Productos</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="">P Ventas</a>
+                    <a class="menu__link" href="./sale-point.html">P Ventas</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="">Contacto</a>
@@ -36,13 +37,15 @@
         </nav>
     </header><!--FIN HEADER-->
 
-    <h1>Productos</h1>
+    
     <!-- Main -->
-    <main class="container main-product grid-container">        
+    <main class="main">
+        <h1 class="title">Productos</h1>
+    <div class="container main-product grid-container">        
         <article class="grid-article article1">
-            <h2 class="name">Triton</h2>
-            <h3 class="description">Descripción</h3>
-            <h3 class="caracter">Características</h3>
+            <h2 class="name sub-title">Triton</h2>
+            <h3 class="description sub-title">Descripción</h3>
+            <h3 class="caracter sub-title">Características</h3>
             <p class="cost">Precio lista: $12.840,00</p>
             <p class="discount" id="discount">Efectivo: $11.556,00</p>
             <p class="description__item">Modelo semiflexible diseñado sobre una horma asimétrica proporcionando un ajuste confortable y seguro. Su diseño hace que se puedan utilizar sobre placas, desplomes y fisuras, siendo así un modelo polivalente.</p>
@@ -57,9 +60,9 @@
             </picture>
         </article>
         <article class="grid-article article2">
-            <h2 class="name">Becadam</h2>
-            <h3 class="description">Descripción</h3>
-            <h3 class="caracter">Características</h3>
+            <h2 class="name sub-title">Becadam</h2>
+            <h3 class="description sub-title">Descripción</h3>
+            <h3 class="caracter sub-title">Características</h3>
             <p class="cost">Precio lista: $12.550,00</p>            
             <p class="discount" id="discount">Efectivo: $10.667,50</p>
             <p class="description__item">Modelo semiflexible diseñado sobre una horma asimétrica proporcionando un ajuste confortable y seguro. Su diseño hace que se puedan utilizar sobre placas, desplomes y fisuras, siendo así un modelo polivalente.
@@ -75,9 +78,9 @@
             </picture>
         </article>
         <article class="grid-article article3">
-            <h2 class="name">Kamimaze</h2>
-            <h3 class="description">Descripción</h3>
-            <h3 class="caracter">Características</h3>
+            <h2  data-aos="fade-right" class="name sub-title">Kamimaze</h2>
+            <h3 class="description sub-title" sub-title>Descripción</h3>
+            <h3 class="caracter sub-title">Características</h3>
             <p class="cost">Precio lista: $12.840,00</p>            
             <p class="discount" id="discount">Efectivo: $11.556,00</p>
             <p class="description__item">Modelo flexible diseñado sobre una horma convexa, permitiendo un mejor calce con el que podrás sentir el más mínimo relieve. Ideal para adherencia y desplomes. Recomendada para la escalada deportiva. </p>
@@ -92,9 +95,9 @@
             </picture>
         </article>
         <article class="grid-article article4">
-            <h2 class="name">Zen</h2>
-            <h3 class="description">Descripción</h3>
-            <h3 class="caracter">Características</h3>
+            <h2 class="name sub-title">Zen</h2>
+            <h3 class="description sub-title">Descripción</h3>
+            <h3 class="caracter sub-title">Características</h3>
             <p class="cost">Precio lista: $12.860,00</p>            
             <p class="discount" id="discount">Efectivo: $10.931,00</p>
             <p class="description__item">Modelo desarollado sobre una horma asimétrica, refleja las nuevas necesidades de los escaladores que predominan en los rocódromos.
@@ -110,7 +113,9 @@
                 <img class="picture-product" src="../assets/img/product/descarga (3).jpg " alt="pedula de escalada teknia Zen negras con belcro">
             </picture>
         </article>
-    </main> 
+    </div>  
+    </main>
+   
     <!-- Fin main -->
 
     <footer>

@@ -1,13 +1,16 @@
 /*Imports*/ 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-
+@import url('animate.css');
 /* Variables*/ 
 
 :root {
     --principal: #0b0c0d; 
     --secondary: #fff;
+    --terciary: #C97C56;
+    --quarter: #99AC51;  
     --font-primary: "Rubik", sans-serif;
     --font-secondary: "Bowly One SC" 
+
 }
 
 
@@ -46,7 +49,15 @@ p {
 h1 {
     font-size: 2.4em;
 }
- 
+
+.title {
+    background: linear-gradient(to bottom, #C97C56, #99AC51);
+}
+
+.sub-title {
+    background: linear-gradient(to right, #99AC51, #fff) ;
+}
+
 h2 {
     font-size: 2em;
 }
@@ -54,6 +65,8 @@ h2 {
 h3 {
     font-size: 1.8em;
 }
+
+
 
 
 
@@ -82,7 +95,7 @@ header .navbar {
   
     min-height: 7vh;
     max-height: 10vh;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 2rem;
 }
@@ -93,23 +106,40 @@ header .navbar {
 }
 
 header .menu {
-    flex-basis: 40%;
-    justify-content: space-around;
+    flex-basis: 50%;
+    justify-content: space-between;
+   
 }
 
 .menu .menu__item .menu__link { 
     font-size: 1.8em;
-    position: relative;
-    border: 1px var(--secondary) solid;
-    color: var(--secondary);
+    position: absolute;
+    color: var(--secondary);    
 }
+
+#nosotros {    
+   font-weight: bold;
+}
+
+#product {    
+    font-weight: bold;
+}
+
+#sale-points {
+    font-weight: bold;
+}
+
  /*FIN HEADER*/ 
 
  /*Main*/ 
- main {
-    margin: 5px 0;
+ .main {
+     background-color: var(--principal);
+ }
+ div {
+    margin: 5px 30px;
     padding: 0;
     justify-content: space-between;
+
  }
 
  /* Home */
@@ -122,6 +152,7 @@ header .menu {
     background-size: 100%;
     align-items: center;
     justify-content: center;
+    
 }
 
 .info {
@@ -139,13 +170,18 @@ header .menu {
 
  /*Products*/
  
+
+ 
  .picture-product {
      height: 200px;
      width: 200px;
 
  }
 
+ 
+
  .grid-container {
+     background-color: var(--secondary);
      display: grid;
      gap: 20px;
      grid-template-areas:
@@ -154,63 +190,67 @@ header .menu {
      }
 
 
- /*Products*/
+ /*Products articles*/
 
 .grid-article {
-    height: 70vh;
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
     gap: 2px;
 }
 
 h2 .name {
     grid-row: 1/2;
     grid-column: 1/2;
+    background-color: orangered;
+    margin-left: 50px;
+
 }
 
 h2 .description {
     grid-row: 1/2;
     grid-column: 2/3;
+    
 }
 
 .img-shoe {
-    grid-row: 2/8;
+    grid-row: 2/3;
     grid-column: 1/2;
 }
 
 .cost {
-    grid-row: 8/9;
+    grid-row: 3/4;
     grid-column: 1/2;
 }
 
 .discount {
-    grid-row: 9/10;
+    grid-row: 4/5;
     grid-column: 1/2;
 }
 
-#discount {
-    color: red;
-}
-
 p .description-item {
-    grid-row: 2/6;
+    grid-row: 2/3;
     grid-column: 2/3;
 }
 
 .caracter {
-    grid-row: 6/7;
+    grid-row: 3/4;
     grid-column: 2/3;
 }
 
 .caracter__item {
-    grid-row: 7/10;
+    grid-row: 4/5;
     grid-column: 2/3;
 
     font-size: 1.4em;
     list-style-type: circle;
 }
 
+
+#discount {
+    color: red;
+}
 
 /*Footer*/ 
 
@@ -245,12 +285,16 @@ p .description-item {
     justify-content: space-around;
 }
 
+.chancho {
+    flex-basis: 33%;
+    
+}
+
 footer .submenu__item {
         font-size: .9 em;
-
 }
 
 .sumbenu__item .submenu__link {
-    
     font-size: .7em;
+    
 }
