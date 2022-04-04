@@ -1,0 +1,196 @@
+:root {
+    --principal: #0b0c0d; 
+    --secondary: #fff;
+    --terciary: #C97C56;
+    --quarter: #99AC51;  
+    --font-primary: "Rubik", sans-serif;
+    --font-secondary: "Bowly One SC" 
+
+}
+
+/*IPORTS*/ 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globals */
+
+html {
+    font-size: 62.5%; /* este valor es para que el tamaño de la fuente en el descktop sea de 10px pero que sea dinámico segun la pantalla que se este utilizando- es 62.5% de 16px que es el tamaño de fuente por defecto que tiene el ordenador */ 
+    font-family: var(--font-primary);
+    color: var(--principal);
+}
+body {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 5%;
+}
+
+li{
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+    display: inline-block;
+}
+
+p {
+    font-size: 1.6em;
+    color: var(--principal);    
+}
+
+h1 {
+    font-size: 2.4em;
+}
+
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+
+
+
+
+/*Helpers*/ 
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+/*Header*/ 
+header {
+    background-color: black;
+
+}
+
+header .navbar {
+ 
+    min-height: 7vh;
+    max-height: 13vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logotipo {
+    height: 40px;
+    width: 120px;
+}
+
+header .nav {
+    padding: 0%;
+    flex-basis: 50%;
+    justify-content: space-between;
+    
+   
+}
+
+.nav .nav-item .nav-link { 
+    font-size: 1.2em;
+    position: relative;
+    color: #fff !important;    
+}
+
+
+#nosotros {    
+   font-weight: bold;
+}
+
+#product {    
+    font-weight: bold;
+}
+
+#sale-points {
+    font-weight: bold;
+}
+
+#sale-points {
+    font-weight: bold;
+}
+/*Fin Header*/ 
+
+/*Main*/ 
+h2{
+    background: linear-gradient(to bottom, #C97C56, #99AC51);
+}
+.main{
+    background-color: #0b0c0d;
+    height: 100vh;
+}
+
+.container-main{
+    align-items: center;
+}
+
+/*Footer*/ 
+
+/*Footer*/ 
+
+.footer {
+    background-color: var(--principal);
+    min-height: 7vh;
+    max-width: auto;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.legal__item {
+    font-size: 1.1em;
+    color: var(--secondary);
+   
+} 
+
+.container-img {
+    align-items: center;
+}
+
+.footer-logotipo {
+    height: 40px;
+    width: 120px;
+    align-items: center;
+   
+}
+
+.menu-footer {
+    color: var(--secondary);
+    font-size: .9em;
+    justify-content: space-around;
+}
+
+.chancho {
+    flex-basis: 33%;
+    
+}
+
+footer .submenu__item {
+        font-size: .9 em;
+}
+
+.sumbenu__item .submenu__link {
+    font-size: .7em;
+    
+}
+

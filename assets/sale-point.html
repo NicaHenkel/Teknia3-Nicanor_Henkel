@@ -5,35 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sale-points</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 
 <body>
-    <header>
-        <nav class="navbar flex-row conteiner">
-            <picture>
-                <img class="logotipo" src="./img/about us/letra blanco.png" alt="logotipo Teknia">
-                </a>
-            </picture>
-             <ul class="menu flex-row"> 
-                <li class="menu__item">
-                    <a class="menu__link" href="../index.html">Nosotros</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./product.html">Productos</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" id="sale-points" href="">P Ventas</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="">Contacto</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="">Carrito</a>
-                </li>
-            </ul>
-        </nav>
+    <header >
+        <nav class="flex-row container navbar">
+            <div class="container-fluid">
+                <picture class="">
+                    <img class="logotipo" src="../assets/img/about us/letra blanco.png" alt="">
+                </picture>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../assets/product.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../assets/sale-point.html" id="sale-points">P. Ventas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../assets/contact.html">Contact</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Carrito</a>
+                    </li>
+                  </ul>                
+            </div>           
+        </nav>               
     </header><!--FIN HEADER-->
+    
+    <main class="main">
+        <div class="container container-main flex-row">
+            <h2>Puntos de venta</h2>
+            <div class="container-main row">
+                <div class="col-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Buenos Aires
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <ul>
+                                  <li><a href="https://nakaoutdoors.com.ar/" target="_blank">Naka Outdoors</a></li>
+                                  <li><a href="https://www.tiendamuro.com.ar/equipo/equipo1/zapatillas/" target="_blank">Tienda Muro</a></li>
+                                  <li><a href="https://rupalnet.com/" target="_blank">Rupal Mountain Gear</a></li>
+                                  <li><a href="http://www.fugate.com.ar/" target="_blank">Fugate</a></li>                            
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Córdoba
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="https://nunatakmountain.com.ar/" target="_blank">Nunatak</a></li>
+                                    <li><a href="https://www.mountaintrekking.com.ar/" target="_blank">Mountain Trekking</a></li>
+                                    <li><a href="https://prusiktienda.com/" target="_blank">Prusik tienda de montaña</a></li>
+                                    <li><a href="https://www.suizaoutdoor.com.ar/" target="_blank">Suiza outdoors</a></li>                            
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Mendoza
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="https://elrefugioaconcagua.com/" target="_blank">El refugio Aconcagua</a></li>
+                                    <li><a href="http://orviz.com/" target="_blank">Orviz</a></li>
+                                    <li><a href="http://www.pireaconcagua.com.ar/" target="_blank">Pire Aconcagua</a></li>       
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                San Carlos de Bariloche
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  <ul>
+                                      <li><a href="https://outdoorcompany.ar/" target="_blank">Outdoors Company</a></li>
+                                      <li><a href="https://ar.worldorgs.com/catalogar/san-carlos-de-bariloche/boot-camp/summit-the-north-face-patagonia-burton" target="_blank">Summit</a></li>
+                                      <li><a href="https://www.instagram.com/lalunamuro/?hl=es" target="_blank">La Luna Muro de Escalada</a></li>
+                                      <li><a href="https://patagoniashowroom.com/" target="_blank">Patagonia Showroom</a></li>                            
+                                  </ul>
+                              </div>
+                            </div>
+                          </div><div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Rosario
+                              </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  <ul>
+                                      <li><a href="https://westerns.com.ar/" target="_blank">Westerns Tienda de Montaña</a></li>
+                                      <li><a href="http://www.mountaingroup.com.ar/" target="_blank">Mountain Group</a></li>
+                                      <li><a href="https://refugio73.com/" target="_blank">Refugio 73</a></li>
+                                      <li><a href="http://www.aventuradosweb.com/" target="_blank">Aventurados</a></li>                            
+                                  </ul>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>         
+            </div>
+            
+        </div>             
+    </main> 
+
+    <footer>
+        <nav class="navbar footer flex-row conteiner">
+            <article class="menu menu-footer flex-column legal">                
+                <p class="legal__item">Teknia Climbing Shoes, Industria Argentina.</p>
+                <p class="legal__item">CP: 1605 CVA, Esteban Echeverria 2172, Munro, Buenos Aires, Argentina.</p>
+                <p class="legal__item">+ 54 9 11 7681-0151</p>                
+            </article>
+            <picture class="">
+                <img class="footer-logotipo container-img" src="../assets/img/about us/letra blanco.png" alt="isotipo Teknia">
+            </picture>
+            <article class="">
+                <ul class="menu__item flex-row">
+                    <li class="menu__link"><a href="../Teknia- Henkel Cop/index.html">Nosotros</a></li>
+                        <div class="flex-column">
+                            <ul class="submenu__item">
+                                <li class="submenu__link"><a href="../Teknia- Henkel Cop/index.html">Acerca de Teknia</a></li>
+                                <li class="submenu__link"><a href="../Teknia- Henkel Cop/index.html">Propuesta de valor</a></li>
+                            </ul>
+                        </div>                        
+                    <li class="submenu__link"><a href="../Teknia- Henkel Cop/assets/pages/product.html">Productos</a></li>
+                    <li class="submenu__link"><a href="../Teknia- Henkel Cop/assets/pages/p-ventas.html">P. Venta</a></li>
+                    <li class="submenu__link"><a href="../Teknia- Henkel Cop/assets/pages/contact.html">Contacto</a>
+                        <ul class="submenu__item">
+                            <li class="submenu__link"><a href="../Teknia- Henkel Cop/assets/pages/contact.html">Cel:+ 54 9 11 7681-0151</a> </li>
+                            <li class="submenu__link"><a href="../Teknia- Henkel Cop/assets/pages/contact.html">E-mail: teknia_shoes@gmail.com</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>          
+        </nav>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
